@@ -1,0 +1,67 @@
+﻿schema: figure-library.personal-module.v1
+moduleId: ternary-plot
+title: 三元相图
+titleEn: ternary plot
+description: 使用 ggtern 包绘制三元相图，展示三个组分（A/B/C）的组成关系。按四个分组（T/D/L/K）着色，点大小反映平均值。
+application: |-
+  - **组成数据分析。** 适用于微生物群落、地球化学、材料科学等领域的三元组成数据可视化。
+  - **多组比较。** 通过颜色映射分组变量，直观比较不同组在三维空间中的分布差异。
+  - **丰度可视化。** 点大小编码第三个维度（如平均丰度），增强信息密度。
+scientificQuestion: 三个组分比例关系下，不同分组样本如何分布？
+dataProfile: 使用内嵌示例数据，包含80行OTU物种在A/B/C三个组分下的百分比数据。用户可替换为自身数据。
+plotFamily: ternary
+language: R
+tags:
+  - R
+  - ggtern
+  - ternary
+  - composition
+  - microbiome
+packages:
+  - ggtern
+  - RColorBrewer
+  - grid
+  - scales
+codeFiles:
+  - code/main.R
+inputFiles: []
+canonicalCode: code/main.R
+requiredFiles:
+  - README.md
+  - code/main.R
+  - description.md
+  - docs/doc-description.md
+  - module.yml
+  - preview.png
+  - thumbnail.jpg
+  - provenance.md
+files:
+  - README.md
+  - code/main.R
+  - description.md
+  - docs/doc-description.md
+  - module.yml
+  - preview.png
+  - thumbnail.jpg
+  - provenance.md
+preview:
+  path: preview.png
+  bytes: 79557
+  sha256: d80fcc95766e839f92779006f7c63f0aa91ee2ec50d8d4915693cb53c6e82063
+  mediaType: image/png
+thumbnail:
+  path: thumbnail.jpg
+  bytes: 79557
+  sha256: d80fcc95766e839f92779006f7c63f0aa91ee2ec50d8d4915693cb53c6e82063
+  mediaType: image/jpeg
+licenses:
+  code: MIT
+  content: CC-BY-4.0
+  documentation: CC BY 4.0
+publisher:
+  reviewStatus: pending
+  executionStatus: not_run
+  executionScope: unknown
+provenance:
+  - type: original_submission
+    note: Module created for SFL personal library. Data embedded in code for portability.
