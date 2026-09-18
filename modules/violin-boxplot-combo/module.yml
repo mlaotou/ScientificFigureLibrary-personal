@@ -50,8 +50,8 @@ preview:
   mediaType: image/png
 thumbnail:
   path: thumbnail.jpg
-  bytes: 55872
-  sha256: 831c157a661e4bcb7dbcb703c8b24f2dccf6f5a6dad7a23f86bc28033e199b16
+  bytes: 56643
+  sha256: 4f26502171d696f8ede5c570087feef5dc8100cd5cb2d75cb572abea37d78a3c
   mediaType: image/jpeg
 licenses:
   code: MIT
