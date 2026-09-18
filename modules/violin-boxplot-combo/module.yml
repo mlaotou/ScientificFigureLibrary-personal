@@ -1,0 +1,66 @@
+﻿schema: figure-library.personal-module.v1
+moduleId: violin-boxplot-combo
+title: 提琴图加箱线显著性组合图
+titleEn: violin-boxplot combo with significance
+description: 用 ggplot2 + ggpubr 绘制提琴图与箱线图叠加，并添加成对 t 检验显著性标注。示例使用 IRIS 内置数据集演示画法，不是论文结果。
+application: |-
+  - **表达量分布可视化。** 不同分组（基因型、处理条件等）的连续变量分布，用提琴图展示密度，箱线图给出四分位数。
+  - **组间差异标注。** 对三个及以上组的数据，自动进行成对 t 检验并标注 p 值。
+  - **快速出图参考。** 提供可复用的配色方案与出版级主题模板。
+scientificQuestion: 多个组别之间的连续变量分布与差异显著性如何直观展示？
+dataProfile: 使用 R 内置 iris 数据集，无外部输入文件。
+plotFamily: violin
+language: R
+tags:
+  - R
+  - ggplot2
+  - ggpubr
+  - violin
+  - boxplot
+  - significance
+packages:
+  - ggplot2
+  - dplyr
+  - ggpubr
+codeFiles:
+  - code/organized.R
+inputFiles: []
+canonicalCode: code/organized.R
+requiredFiles:
+  - README.md
+  - code/organized.R
+  - description.md
+  - docs/doc-description.md
+  - module.yml
+  - preview.png
+  - thumbnail.jpg
+files:
+  - README.md
+  - code/organized.R
+  - description.md
+  - docs/doc-description.md
+  - module.yml
+  - preview.png
+  - provenance.md
+  - thumbnail.jpg
+preview:
+  path: preview.png
+  bytes: 111091
+  sha256: 746f8bb01fbe3335e736396fed8d20a3fab879993ca639820fa7b7030390684a
+  mediaType: image/png
+thumbnail:
+  path: thumbnail.jpg
+  bytes: 55872
+  sha256: 831c157a661e4bcb7dbcb703c8b24f2dccf6f5a6dad7a23f86bc28033e199b16
+  mediaType: image/jpeg
+licenses:
+  code: MIT
+  content: CC-BY-4.0
+  documentation: CC BY 4.0
+publisher:
+  reviewStatus: pending
+  executionStatus: not_run
+  executionScope: unknown
+provenance:
+  - type: original_submission
+    note: Module created by mlaotou for Scientific Figure Library.
