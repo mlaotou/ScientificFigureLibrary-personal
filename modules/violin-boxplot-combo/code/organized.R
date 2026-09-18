@@ -1,4 +1,4 @@
-# =============================================================================
+﻿# =============================================================================
 # 提琴图加箱线显著性组合图
 # organized：线性脚本 + 中文分节；路径相对本条目目录
 # =============================================================================
@@ -124,3 +124,15 @@ ggsave(file.path(out_dir, "violin_boxplot_combo_sig.png"),
 # =========================================================
 ggsave(file.path(root, "preview.png"),
        plot = p_sig, width = 7, height = 6, dpi = 300, bg = "white")
+
+# =========================================================
+# 9. 生成 thumbnail.jpg（png中转，避免透明度叠加失真）
+# =========================================================
+png(file.path(root, "_thumb_tmp.png"), width = 450, height = 338, res = 96)
+print(p_combo)
+dev.off()
+jpeg(file.path(root, "thumbnail.jpg"), quality = 92)
+print(p_combo)
+dev.off()
+file.remove(file.path(root, "_thumb_tmp.png"))
+
